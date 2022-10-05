@@ -57,6 +57,7 @@ sudo apt-get remove docker docker-engine docker.io containerd runc
 
 **[Check out this documentation to get your Docker Engine installed](https://docs.docker.com/engine/install/)**
 
+
 ### Installation of K8s Delegate for Harness Delegate
 
 Harness Delegate is the service that connects all the components of the pipeline i.e artifact, infrastructure, collaboration, verification and other providers with the Harness Manager. It performs all the operations in the deployment lifecycle. Here we’ll install Kubernetes Delegate.
@@ -80,7 +81,7 @@ With this you will directly connect with your cluster from the terminal and thus
 wget -p https://app.harness.io/ -O /dev/null
 ```
 
-6. Now we’ll install the harness delegate using the harness-delegate.yaml file using this command
+6. Now we’ll install the harness delegate using the `harness-delegate.yaml` file using this command
 
 ```bash
 kubectl apply -f harness-delegate.yaml
